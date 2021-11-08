@@ -1,0 +1,75 @@
+header {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__img-container {
+    margin-top: 10px;
+}
+
+.header__img-container--img, .header__img-container {
+    width: 25px;
+    height: 25px;
+}
+
+.header__nav__ul {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0; top: 45px;
+    
+    overflow: hidden;
+    background-color: rgba(1,1,1,.3);
+    transition: height .5s ease;
+}
+
+.header__nav__ul__li {
+    width: 100%;
+    height: 45px;
+}
+
+.header__nav__ul__li--a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: lighter;
+
+    display: block;
+    width: inherit;
+    height: inherit;
+    padding: 14px;
+
+    transition: all .2s linear;
+}
+
+.header__nav__ul__li--a:hover {
+    background-color: rgba(1,1,1,.6);
+}
+
+.header__nav--input {
+    display: none;
+}
+
+.header__nav--label {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    margin: 12.5px 12.5px 0 0;
+}
+
+.header__nav--label svg rect {
+    fill: #fff;
+}
+
+.header__nav--input:checked ~ ul {
+    height: 135px;
+}

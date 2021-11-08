@@ -1,0 +1,70 @@
+.header__nav {
+    width: 310px;
+}
+
+.header__nav__ul {
+    width: inherit;
+    height: inherit;
+    position: static;
+    overflow: visible;
+    background-color: transparent;
+}
+
+.header__nav__ul__li {
+    width: 100px;
+    display: inline-block;
+}
+
+.header__nav__ul__li--a {
+    font-size: 1.1rem;
+    padding: 20px 5px 0 5px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.header__nav__ul__li--a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.header__nav--label {
+    display: none;
+}
+
+
+.welcome__text--h1 {
+    font-size: 2rem;
+}
+
+.welcome__text--p {
+    font-size: 1.3rem;
+}
+
+.welcome__text__social--li a, .welcome__text__social--li {
+    width: 32px;
+    height: 32px;
+}
+
+.about__container__profile--img {
+    width: 150px;
+    height: 150px;
+}
+
+.about__container__profile__main--h2 {
+    font-size: 1.8rem;
+}
+
+.about__container__profile__main--p, .about__container--description,
+.about__container--button, .portafolio__text--p, .portafolio__text--more,
+.footer__info__navegation ul li a  {
+    font-size: 1.2rem;
+}
+
+.about__container--button {
+    padding-bottom: 4px;
+}
+
+.about__container--button, .portafolio__text--more {
+    width: 150px;
+    height: 50px;
+}

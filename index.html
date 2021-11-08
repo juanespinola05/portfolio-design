@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanse</title>
+
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/header.css" as="style">
+    <link rel="preload" href="css/componentes.css" as="style">
+</head>
+<body>
+    <header>
+        <div class="container header__container">
+            <div class="header__img-container">
+                <img class="header__img-container--img" src="assets/images/logo.png" alt="Juan Sebastian Espinola Logo">
+            </div>
+            <nav class="header__nav">
+                <label for="menu" class="header__nav--label">
+                    <svg viewBox="0 0 100 80" width="20" height="20">
+                        <rect width="100" height="10"></rect>
+                        <rect y="30" width="100" height="10"></rect>
+                        <rect y="60" width="100" height="10"></rect>
+                    </svg>
+                </label>
+                <input type="checkbox" name="menu" id="menu" class="header__nav--input">
+                <ul class="header__nav__ul">
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li--a color-white" href="#">Sobre mi</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li--a color-white" href="#">Portafolio</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li--a color-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="welcome section-styles backgrounds" title="Photo by fauxels from Pexels">
+        <div class="container">
+            <div class="welcome__text color-white">
+                <h1 class="welcome__text--h1" title="Juan Sebastian Espinola">Soy Juanse.</h1>
+                <p class="welcome__text--p">Desarrollador web.</p>
+                <div class="welcome__text__social">
+                    <ul>
+                        <li class="welcome__text__social--li inline-block-li"><a class="icon-base backgrounds" href="/" title="Github Repo"></a></li>
+                        <li class="welcome__text__social--li inline-block-li"><a class="icon-base backgrounds" href="/" title="LinkedIn Profile"></a></li>
+                        <li class="welcome__text__social--li inline-block-li"><a class="icon-base backgrounds" href="mailto:sebar5er@gmail.com" title="Send mail to Juanse"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div clasS="welcome__mask mask left-mask"></div>
+    </section>
+    <section class="about section-styles">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__container__profile">
+                    <img src="assets/images/profile-pic.jpg" class="about__container__profile--img" alt="Foto de Juan Sebastian Espinola">
+                    <div class="about__container__profile__main">
+                        <h2 class="about__container__profile__main--h2">Juan Sebastian Espinola</h2>
+                        <p class="about__container__profile__main--p">Desarrollador web</p>
+                    </div>
+                    <p class="about__container--description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus illum reprehenderit eligendi facere consequuntur ipsa. Aliquam cupiditate repellat ratione dignissimos assumenda. Vitae soluta autem quaerat distinctio aliquid facere dignissimos nisi.
+                    </p>
+                    <a href="/" class="about__container--button color-white">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portafolio section-styles backgrounds">
+        <div class="container">
+            <div class="portafolio__text">
+                <h2 class="portafolio__text--titulo color-white">Mi portafolio</h2>
+                <p class="portafolio__text--p color-white">Trabajé para Google y Facebook imaginate</p>
+                <a href="/" class="portafolio__text--more">Leer más</a>
+            </div>
+        </div>
+        <div class="portafolio_mask--up mask right-mask"></div>
+        <div class="portafolio_mask--down mask left-mask"></div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <img class="footer__info--img" src="assets/images/logo.png" alt="Juanse Logo">
+                <div class="footer__info__navegation">
+                    <ul>
+                        <li>
+                            <a id="contact-button" class="color-white" tabindex="0">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="" class="color-white">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="color-white">Sobre mi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__form-container">
+                <form action="" method="POST" class="footer__form-container--form">
+                    <h3 class="footer__form-container--titulo">Charlemos</h3>
+                    <input type="text" placeholder="Nombre" class="footer__form-container--input simple-input">
+                    <input type="email" placeholder="Email" class="footer__form-container--input simple-input">
+                    <textarea name="" id="" cols="30" rows="10" class="footer__form-container--input textarea-input" placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="submit-input">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
